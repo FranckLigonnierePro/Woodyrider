@@ -1,0 +1,141 @@
+/* DOCUMENT INFORMATION
+    - Document: Site vitrine Woody Rider
+    - Version: 1.0.0
+    - Athor: Franck
+*/
+
+/* COLORS
+    - Defaut body text 
+    - h1: 
+    - h2: 
+    - h3
+
+    - button
+    - button:hover 
+    - icon: 
+    - border
+
+*/
+
+/* FONTS
+    - Default: ROBOTO
+    - title: With The Waves
+    - Subtitle: Roose Sally
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =SELECTION
+    4. =HISTOIRE
+    5. =TECHNOLOGY
+    6. =SPOTS
+    7. =FOOTER
+
+*/
+
+
+/* GLOBAL
+============================================= */
+
+h2{
+    font-size: 48px;
+    font-family: 'roose_sallyregular', Arial, sans-serif;
+    color: #222222;
+}
+
+h1{
+    font-family: 'withthewavesregular', Arial, sans-serif;
+    color: #222222;
+}
+
+h3{
+    font-family:'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    color: #222222;
+}
+
+p{
+    font-family:'Roboto', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: #222222;
+}
+
+/* HEADER
+============================================= */
+.navbar{
+    z-index: 1000;
+}
+
+header{
+    height: 100vh;
+    background-color: black;
+}
+
+video{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.title-header{
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 10%;
+
+}
+
+.title-header h1{
+ font-size: 96px;
+}
+
+.title-header h2{
+   font-size: 64px;
+}
+.cta{
+    display: flex;
+}
+.btn{
+    font-size: 24px;
+}
+
+.form-control{
+    width: 15vw;
+}
+
+
+/* SELECTION
+============================================= */
+
+.selection{
+    height: 100vh;
+}
+
+.story{
+    height: 50vh;
+    background-color: #EFEBE5;
+}
+
+.techno{
+    height: 50vh;
+}
+
+.spots{
+    height:100vh;
+    background-color: #EFEBE5;
+}
+
+.carousel{
+    width: 80%;
+    text-align: center;
+}
+
+footer{
+    height: 50vh;
+}
