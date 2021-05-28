@@ -38,14 +38,14 @@
 
     <!-------------Navbar--------------->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         
         <div class="container">
 
             <a class="navbar-brand" href="#">
               <img src="images/logo white.png" alt="Logo Woody Rider" width="40" height="40">WOODY RIDER</a>
 
-          <button class="navbar-toggler" 
+          <button class="navbar-toggler custom-toggler" onclick="this.blur();"
                   type="button" 
                   data-bs-toggle="collapse" 
                   data-bs-target="#navbarNav" 
@@ -58,28 +58,34 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
+                <a class="nav-link" href="pages/shop.html">SHOP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BOARDS</a>
+                <a class="nav-link" href="pages/boards.html">BOARDS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">TECHNOLOGY</a>
+                <a class="nav-link" href="pages/technology.html">TECHNOLOGY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ORDER</a>
+                <a class="nav-link" href="pages/order.html">ORDER</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
+    <!------------------------Promotion fixed-------------------------->
+    <div class="promo">
+      <p>PROMOTION DE LANCEMENT <span>1 ACCESSOIRE OFFERT</span> POUR TOUTES PRECOMMANDES.</p>
+    </div>
+  
+  
     <!------------------------Video------------------------------>
 
-    <video class="showcase" src="video/header_movie.webm" muted autoplay loop></video>
+    <video src="video/header_movie.webm" muted autoplay loop></video>
     <div class="overlay"></div>
 
     <!--------------------------Title header----------------------->
@@ -88,9 +94,9 @@
         <h1>A NEW WAY TO RIDE</h1>
         <h2>Ride clean, ride free</h2>
         <div class="cta">
-        <div class="btn">SHOP</div>
+        <div class="btn btn-full">SHOP</div>
         <form class="d-flex">
-            <div class="btn">ENVOYER</div>
+            <div class="btn btn-send">ENVOYER</div>
             <input type="email" class="form-control" id="newsletter" placeholder="Recevoir les nouveautés par mail">
           </form>
         </div>
@@ -103,10 +109,11 @@
 <section class="selection">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-xl-9 col-md-9 col-sm- selection-title">
                 <h2>LA SELECTION MADE IN WOODY</h2>
+                <img src="images/home/barre soulignage.svg" alt="">
             </div>
-            <div class="col-md-4">
+            <div class="col-xl-3 col-md-3">
                 <div class="btn">TOUT LE SHOP</div>
             </div>
         </div>
@@ -115,7 +122,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-auto" style="width: 100%;">
                     <img src="images/Boards/board 1.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h3 class="card-title">LA MALIBOB</h3>
@@ -124,7 +131,7 @@
                   </div>
             </div>    
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-auto" style="width: 100%;">
                     <img src="images/Boards/skate.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h3 class="card-title">LE WOODBREAKER</h3>
@@ -133,7 +140,7 @@
                   </div>
             </div>    
             <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-auto" style="width: 100%;">
                     <img src="images/Boards/board 2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h3 class="card-title">LE FISH'N RIDE</h3>
@@ -148,14 +155,21 @@
 <!--STORY
 ================================================================-->
 
-<section class="story">
+<section class="story ">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img src="images/home/L_histoire du shop.jpg" alt="l'histoire du shop photo">
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6 story-text">
+              <div class="d-block d-lg-none">
                 <h2>L'HISTOIRE DU SHOP</h2>
+                <img class="trait-a" src="images/home/barre soulignage.svg" alt="">
+              </div>
+                <img class="story-img" src="images/home/L_histoire du shop.jpg" alt="l'histoire du shop photo">
+            </div>
+            <div class="col-md-12 col-lg-6 story-text">
+              <div class="d-none d-lg-block">
+                <h2>L'HISTOIRE DU SHOP</h2>
+                <img class="trait-a" src="images/home/barre soulignage.svg" alt="">
+              </div>
                 <p>Brice O'brien (Le BOB), 26 ans, est un jeune menuisier qui vient de finir ses études. 
                     Passionné de glisse, il s'est lancé le défis de créer des planches de surf et de skates en bois recyclé.  
                     La fabrication des planches de surf est réalisée dans l’atelier Woody rider en Vendée, 
@@ -174,17 +188,24 @@
 <section class="techno">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12 col-lg-6 techno-text">
                 <h2>UNE TECHNOLOGIE INNOVANTE</h2>
+                <img class="trait-b" src="images/home/barre soulignage.svg" alt="">
+                <div class="d-block d-lg-none">
+                <img class="techno-img mx-auto d-block" src="images/home/Une technologie inovante.jpg" alt="l'histoire du shop photo">
+                </div>
                 <p>Brice O'brien (Le BOB), 26 ans, est un jeune menuisier qui vient de finir ses études. 
                     Passionné de glisse, il s'est lancé le défis de créer des planches de surf et de skates en bois recyclé.  
                     La fabrication des planches de surf est réalisée dans l’atelier Woody rider en Vendée, 
                     non loin des spots de surf comme Bud Bud, la Sauzaie, les Dunes ou encore la grande plage de Saint Gilles croix de vie.
                     Brice vous accueillera et vous guidera dans votre choix de planche. Shortboard, Fish, Malibu ou encore Longboard, 
                     le choix est vaste et la customisation est illimitée.</p>
+                    <div class="btn">EN SAVOIR PLUS</div>
             </div>
-            <div class="col-md-5">
-                <img src="images/home/Une technologie inovante.jpg" alt="l'histoire du shop photo">
+            <div class="col-lg-6 col-md-12">
+                <div class="d-none d-lg-block">
+                <img class="techno-img mx-auto d-block" src="images/home/Une technologie inovante.jpg" alt="l'histoire du shop photo">
+                </div>
             </div>
         </div>
 
@@ -197,8 +218,9 @@
 <section class="spots">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col spots-text">
                 <h2>lES SPOTS PREFERES</h2>
+                <img src="images/home/barre soulignage.svg" alt="">
             </div>
         </div>
         <div class="row">
@@ -215,36 +237,31 @@
                       <div class="carousel-item active">
                         <img src="images/Carousel/bud bud.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                          <h5>BUDBUD</h5>                          
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/Carousel/la grande plage.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                          <h5><span>la grande plage</span></h5>  
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/Carousel/la sauzaie.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                          <h5>la sauzaie</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/Carousel/les dunes.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                          <h5>les dunes</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="images/Carousel/longeville sur mer.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                          <h5><span>longeville sur mer</span></h5>
                         </div>
                       </div>
                     </div>
@@ -263,8 +280,52 @@
 </section>
 
 <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-2">
+        <img src="images/logo white.png" alt="" width="150" height="150">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-2">
+        <ul>
+          <li>
+            <a href="">HOME</a>
+          </li>
+          <li>
+            <a href="">SHOP</a>
+          </li> 
+          <li>
+            <a href="">BOARDS</a>
+          </li> 
+          <li>
+            <a href="">TECHNOLOGY</a>
+          </li> 
+          <li>
+            <a href="">ORDER</a>
+          </li> 
+          <li>
+            <a href="">MENTION LEGAL</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3" >
+        <h3>Adresse: </h3>
+        <p>51 Rue de la Barre, 
+          <br> 85800 Saint-Gilles-Croix-de-Vie
+        </p>
+        <h3>Telephone: </h3>
+        <p>06.36.65.65.65</p>
+        <h3>Reseaux sociaux: </h3>
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+        <p>©made by franck ligonniere,2021.</p>
 
-    
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.078589544396!2d-1.9318791844012506!3d46.684449879134355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480457cf155faa25%3A0x94b183f6aff6e5d!2s51%20Rue%20de%20la%20Barre%2C%2085800%20Saint-Gilles-Croix-de-Vie!5e0!3m2!1sfr!2sfr!4v1622186654073!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
 </footer>
 
 

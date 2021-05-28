@@ -38,6 +38,7 @@
 /* GLOBAL
 ============================================= */
 
+
 h2{
     font-size: 48px;
     font-family: 'roose_sallyregular', Arial, sans-serif;
@@ -61,12 +62,73 @@ p{
     text-align: justify;
     color: #222222;
 }
+a{
+    text-decoration: none;
+}
+section{
+    padding: 50px;
+}
+
+/* NAVBAR
+============================================= */
+
+.navbar{
+    z-index: 4;
+    background-color: #fff;
+    padding: 0;
+}
+
+.navbar a{
+    font-family: 'withthewavesregular', Arial, sans-serif;
+    color: #222222 !important;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2,2,2, 1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  
+.custom-toggler.navbar-toggler {
+    border-color: rgba(255, 102, 204, 0) !important;
+  }
+  
+  .custom-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+
+/* PROMO
+============================================= */
+
+.promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    background-color: #ff0;
+    font-weight: 24px;
+    z-index: 3;
+}
+
+.promo span{
+    color: red;
+}
 
 /* HEADER
 ============================================= */
-.navbar{
-    z-index: 1000;
-}
+
 
 header{
     height: 100vh;
@@ -81,32 +143,68 @@ video{
     height: 100vh;
     object-fit: cover;
     z-index: 2;
+    opacity: 0.8;
+}
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(62, 161, 226);
+    mix-blend-mode: overlay;
+    z-index: 2;
 }
 
 .title-header{
     position: absolute;
     z-index: 2;
-    top: 30%;
-    left: 10%;
-
+    top: 20%;
+    left: 5%;
 }
 
 .title-header h1{
  font-size: 96px;
+ font-family: 'roose_sallyregular', Arial, sans-serif;
+ color: #fff;
+ margin-bottom: 35px;
 }
 
 .title-header h2{
    font-size: 64px;
+   color: #fff;
+   margin-bottom: 70px;
 }
+
 .cta{
     display: flex;
 }
+
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
+    background-color: #FFEE55;
+    font-family:'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.btn-send{
+    margin-left: 24px;
+    background-color: transparent;
+    border: 4px solid #FFEE55;
+    color: #FFEE55;
+    
 }
 
 .form-control{
-    width: 15vw;
+    width: 350px;
+    border-radius: 0;
+    font-family:'Roboto', Arial, sans-serif;
+    font-size: 18px;
 }
 
 
@@ -114,28 +212,246 @@ video{
 ============================================= */
 
 .selection{
-    height: 100vh;
+    height: auto;
 }
+
+.selection h2{
+    margin-bottom: 5px;
+}
+
+.selection-title img{
+    width: 500px;
+    margin-bottom: 35px;
+}
+
+.card{
+    margin: 20px auto
+}
+
+.card-title{
+    margin-top: 50px;
+}
+.card-text{
+    margin-top: 20px;
+}
+
+
+/*--STORY
+================================================================--*/
 
 .story{
-    height: 50vh;
+    height: auto;
     background-color: #EFEBE5;
 }
 
-.techno{
-    height: 50vh;
+.story-img{
+    width: 100%;
+    margin: auto 0;
 }
 
-.spots{
-    height:100vh;
-    background-color: #EFEBE5;
+.story h2{
+    margin-bottom: 5px;
 }
 
-.carousel{
-    width: 80%;
+.story-text{
     text-align: center;
 }
+.trait-a{
+    width: 350px;
+    margin-bottom: 35px;
+}
+
+
+/*--TECHNO
+================================================================--*/
+
+.techno{
+    height: auto;
+}
+
+.techno-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.techno-text h2{
+    margin-bottom: 5px;
+}
+
+.techno-text{
+    text-align: center;
+}
+.trait-b{
+    width: 500px;
+    margin-bottom: 35px;
+}
+
+.techno-text p{
+    margin-bottom: 20px;
+}
+
+.techno-text .btn {
+    display: inline-block;
+}
+
+
+/*--SPOTS
+================================================================--*/
+
+.spots{
+    height: auto;
+    background-color: #EFEBE5;
+    text-align: center;
+}
+.spots-text img{
+    width: 350px;
+    margin-bottom: 35px;
+}
+.carousel{
+    width: 80%;
+    margin: auto;
+}
+
+h5{
+    font-family: 'roose_sallyregular', Arial, sans-serif;
+    font-size: 144px;
+    text-shadow: 0px 0px 20px #000;
+    padding-bottom: 200px;
+}
+
+h5 span{
+    padding-bottom: 0px !important;
+}
+
+/*--FOOTER
+================================================================--*/
 
 footer{
-    height: 50vh;
+    height: auto;
+    padding-top: 50px;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer p{
+    margin-bottom: 20px;
+}
+
+footer i{
+    font-size: 96px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #FFEE55
+}
+footer a{
+    color: #222222;
+}
+footer a:hover{
+    color: #222222;
+}
+footer li{
+    
+    margin-bottom: 50px;
+    font-family: 'withthewavesregular', Arial, sans-serif;
+}
+iframe{
+    width: 30vw;
+    height: 350px;
+} 
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    h2{
+        font-size: 36px;
+        font-family: 'roose_sallyregular', Arial, sans-serif;
+        color: #222222;
+    }
+
+    .selection-title img{
+        width: 370px;
+    }
+
+    .selection .btn{
+        font-size: 18px;
+    }
+
+    .story-text .trait-a{
+        width:250px;
+    }
+
+    .story-img {
+        margin-bottom: 20px;
+    }
+    
+    .trait-b{
+        width: 370px;
+        margin-bottom: 35px;
+    }
+
+    .techno-img{
+        margin-bottom: 20px;
+    }
+
+    .techno p{
+        margin-bottom: 80px;
+    }
+
+    h5{
+        font-family: 'roose_sallyregular', Arial, sans-serif;
+        font-size: 96px;
+        text-shadow: 0px 0px 20px #000;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 36px;
+        font-family: 'roose_sallyregular', Arial, sans-serif;
+        color: #222222;
+    }
+
+    .selection-title img{
+        width: 370px;
+    }
+
+    .selection .btn{
+        font-size: 18px;
+    }
+
+    .story-text .trait-a{
+        width:250px;
+    }
+
+    .story-img {
+        margin-bottom: 20px;
+    }
+    
+    .trait-b{
+        width: 370px;
+        margin-bottom: 35px;
+    }
+
+    .techno-img{
+        margin-bottom: 20px;
+    }
+
+    .techno p{
+        margin-bottom: 80px;
+    }
+
+    h5{
+        font-family: 'roose_sallyregular', Arial, sans-serif;
+        font-size: 96px;
+        text-shadow: 0px 0px 20px #000;
+        padding-bottom: 70px;
+    }
+
+    .cta{
+        flex-direction: column;
+    }
 }
