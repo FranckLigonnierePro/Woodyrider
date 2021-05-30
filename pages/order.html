@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- icons -->
-        <script src="https://kit.fontawesome.com/102983f8ef.js" crossorigin="anonymous"></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/102983f8ef.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="../fonts/withthewaves/withthewaves.css" rel="stylesheet">
-        <link href="../fonts/Roose sally/roosesally.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../fonts/withthewaves/withthewaves.css" rel="stylesheet" />
+    <link href="../fonts/Roose sally/roosesally.css" rel="stylesheet" />
 
-        <!--- styles -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/Eric_meyer_reset.css">
-        <link rel="stylesheet" href="../css/style.css"> 
-        <link rel="icon" type="image/png" href="../images/logo white.png">
+    <!--- styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/Eric_meyer_reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../images/logo white.png" />
 
-    <title>Woody Rider | Brice O'brien</title>  
+    <title>Woody Rider | Brice O'brien</title>
+  </head>
 
-</head>
-
-<body>
-  
-<!--header
+  <body>
+    <!--header
 ================================================================-->
 
     <!-------------Navbar--------------->
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        
       <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="../images/logo white.png"
+            alt="Logo Woody Rider"
+            width="40"
+            height="40"
+          />WOODY RIDER</a
+        >
 
-          <a class="navbar-brand" href="#home">
-            <img src="../images/logo white.png" alt="Logo Woody Rider" width="40" height="40">WOODY RIDER</a>
-
-        <button class="navbar-toggler custom-toggler" onclick="this.blur();"
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler custom-toggler"
+          onclick="this.blur();"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -69,150 +84,183 @@
           </ul>
         </div>
       </div>
-  </nav>
+    </nav>
 
-  <!------------------------Promotion fixed-------------------------->
+    <!------------------------Promotion fixed-------------------------->
 
     <div class="promo">
-      <p>PROMOTION DE LANCEMENT <span>1 ACCESSOIRE OFFERT</span> POUR TOUTES PRECOMMANDES.</p>
+      <p>
+        PROMOTION DE LANCEMENT <span>1 ACCESSOIRE OFFERT</span> POUR TOUTES
+        PRECOMMANDES.
+      </p>
     </div>
 
+    <div class="etapebox"></div>
 
-<div class="etapebox"></div>
-
-<!--Etape 1
+    <!--Etape 1
 ================================================================-->
 
-<section id="story">
-  <div class="container">
-      <div class="row">
+    <section id="story">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-6 p-4 d-flex align-items-center d-none d-lg-block">
-              <div class="stock-img mx-auto">
-                <div >
-                  <img class="story-img" src="../images/Order/toutes les planches sur mesures.jpg" alt="photo materiaux d'origine">
+            <div class="stock-img mx-auto">
+              <div>
+                <img
+                  class="story-img"
+                  src="../images/Order/toutes les planches sur mesures.jpg"
+                  alt="photo materiaux d'origine"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 p-4 text-center d-flex-column align-items-center">
+            <h2>DEMANDER UN DEVIS</h2>
+            <div class="d-block d-lg-none">
+              <img
+                class="story-img"
+                src="../images/Order/toutes les planches sur mesures.jpg"
+                alt="photo materiaux d'origine"
+              />
+            </div>
+            <form>
+              <div class="container devis">
+                <div class="row">
+                  <div class="col-md-6 form-test mb-3">
+                    <label for="nom" class="form-label text-start">NOM</label>
+                    <input type="text" class="form-control" id="nom" aria-describedby="name" onclick="this.blur();">
+                  </div>
+                  <div class="col-md-6 form-test mb-3">
+                    <label for="prenom" class="form-label text-start">PRENOM</label>
+                    <input type="email" class="form-control" id="prenom" aria-describedby="name" onclick="this.blur();">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 form-test mb-3">
+                    <label for="email" class="form-label text-start">ADRESSE EMAIL</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" onclick="this.blur();">
+                  </div>
+                  <div class="col-md-6 form-test mb-3">
+                    <label for="prenom" class="form-label text-start">N° TELEPHONE</label>
+                    <input type="email" class="form-control" id="prenom" aria-describedby="name" onclick="this.blur();">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 form-test mb-3">
+                    <label for="email" class="form-label text-start">TYPE DE BOARD</label>
+                    <select class="form-select" aria-label="Default select example" onclick="this.blur();">
+                      <option selected>Choisir un modèle</option>
+                      <option value="1">Longboard</option>
+                      <option value="2">Shortboard</option>
+                      <option value="3">Fish</option>
+                      <option value="4">Egg</option>
+                      <option value="5">Autre</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-test mt-3 mb-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="this.blur();">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Avec derives
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked onclick="this.blur();">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Avec leash
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </form>
+            <p>Nous répondrons dans un délai de deux semaines tout au plus.</p>
+            <button type="submit" class="btn btn-full">ENVOYER</button>
           </div>
-          <div class="col-lg-6 p-4 text-center d-flex-column align-items-center">                     
-                  <h2>DES MATERIAUX D'EXCEPTIONS</h2>
-                  <div class="d-block d-lg-none">
-                    <img class="story-img" src="../images/Order/toutes les planches sur mesures.jpg" alt="photo materiaux d'origine">
-                  </div>     
-                  <form class="row form-custom">
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-               
-                    <div class="col-12">
-                      <label for="inputAddress" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-12">
-                      <label for="inputAddress2" class="form-label">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputCity" class="form-label">City</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputState" class="form-label">State</label>
-                      <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2">
-                      <label for="inputZip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn ">COMMANDER</button>
-                    </div>
-                  </form>
-          </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-<!--FOOTER
+    <!--FOOTER
 ================================================================-->
 
-<footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-2 p-3">
-                <div class="stock-logo">
-                    <img class="logo-footer" src="../images/logo white.png" alt="">
-                </div>
+          <div class="col-md-6 col-lg-2 p-3">
+            <div class="stock-logo">
+              <img class="logo-footer" src="../images/logo white.png" alt="" />
             </div>
+          </div>
 
-            <div class="col-md-6 col-lg-2 p-3">
-                <div class="list-footer text-center">
-                    <ul>
-                        <li>
-                          <a href="../index.html">HOME</a>
-                        </li>
-                        <li>
-                          <a href="../pages/shop.html">SHOP</a>
-                        </li> 
-                        <li>
-                          <a href="../pages/boards.html">BOARDS</a>
-                        </li> 
-                        <li>
-                          <a href="../pages/technology.html">TECHNOLOGY</a>
-                        </li> 
-                        <li>
-                          <a href="../pages/order.html">ORDER</a>
-                        </li> 
-                        <li>
-                          <a href="">MENTION LEGAL</a>
-                        </li>
-                      </ul>
-                </div>
+          <div class="col-md-6 col-lg-2 p-3">
+            <div class="list-footer text-center">
+              <ul>
+                <li>
+                  <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                  <a href="../pages/shop.html">SHOP</a>
+                </li>
+                <li>
+                  <a href="../pages/boards.html">BOARDS</a>
+                </li>
+                <li>
+                  <a href="../pages/technology.html">TECHNOLOGY</a>
+                </li>
+                <li>
+                  <a href="../pages/order.html">ORDER</a>
+                </li>
+                <li>
+                  <a href="">MENTION LEGAL</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="col-md-5 col-lg-3 p-3 ">
-                <div class="contact text-center">
-                    <h3>Adresse: </h3>
-                    <p>51 Rue de la Barre, 
-                      <br> 85800 Saint-Gilles-Croix-de-Vie
-                    </p>
-                    <h3>Telephone: </h3>
-                    <p>06.36.65.65.65</p>
-                    <h3>Reseaux sociaux: </h3>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-instagram-square"></i></a>
-                    <p>©made by franck ligonniere,2021.</p>
-                </div>
+          <div class="col-md-5 col-lg-3 p-3">
+            <div class="contact text-center">
+              <h3>Adresse:</h3>
+              <p>
+                51 Rue de la Barre, <br />
+                85800 Saint-Gilles-Croix-de-Vie
+              </p>
+              <h3>Telephone:</h3>
+              <p>06.36.65.65.65</p>
+              <h3>Reseaux sociaux:</h3>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-instagram-square"></i></a>
+              <p>©made by franck ligonniere,2021.</p>
             </div>
+          </div>
 
-            <div class="col-md-7 col-lg-5 p-3">
-                <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.078589544396!2d-1.9318791844012506!3d
+          <div class="col-md-7 col-lg-5 p-3">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.078589544396!2d-1.9318791844012506!3d
                 46.684449879134355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480457cf155faa25%3A0x94b183f6aff6e5d!
                 2s51%20Rue%20de%20la%20Barre%2C%2085800%20Saint-Gilles-Croix-de-Vie!5e0!3m2!1sfr!2sfr!4v1622186654073!5m2!1sfr
-                !2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+                !2sfr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-<!-- SCRIPT
+    <!-- SCRIPT
 ==============================================-->
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
