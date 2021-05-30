@@ -82,7 +82,7 @@ p{
     color: #222222;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -98,6 +98,19 @@ a{
 .navbar a{
     font-family: 'withthewavesregular', Arial, sans-serif;
     color: #222222 !important;
+}
+.navbar a::after{
+    background-color: transparent;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: " ";
+    transition:0.5s ;
+
+
+}
+.navbar a:hover::after{
+    background-color: #f0f !important;   
 }
 
 .navbar-brand{
@@ -201,12 +214,22 @@ video{
    }
 
 .btn{
+    border: solid #FFEE55;
     border-radius: 0;
     font-size: 24px;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     background-color: #FFEE55;
+    overflow: hidden;
+    transition: 0.5s;
 }
+
+.btn:hover{
+    color:#FFEE55;
+    background-color: #222222;
+    border: solid #FFEE55;
+}
+
 
 .btn:focus,.btn:active {
     outline: none !important;
@@ -388,6 +411,99 @@ iframe{
 }
 
 
+
+
+/*-PAGE ORDER/SHOP
+================================================================--*/
+
+#construction{
+    background-color: #EFEBE5;
+    height: auto;
+    background-image: url(../images/logo\ white\ trans.png);
+    background-size: cover;
+    background-position: center;
+}
+.message-wait{
+   
+    height: auto;
+    margin-top: 15%;
+}
+
+.message-wait .btn{
+    margin: 50px auto;
+}
+
+.btn a{
+    color: #222222;
+    transition: 0.5s;
+}
+
+.btn a:hover{
+    color: #FFEE55;
+}
+
+.text-wait h1{
+    font-family: 'roose_sallyregular', Arial, sans-serif;
+    color: black;
+    font-size: 128px;
+}
+
+.text-wait h1::after{
+    background-image: url(../images/home/soulignage.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 20px;
+    width: 600px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*-PAGE TECHNOLOGY
+================================================================--*/
+
+.etapebox{
+    height: 110px;
+}
+
+.list-three{
+
+    font-family: 'roose_sallyregular', Arial, sans-serif; 
+    font-size: 36px;  
+    
+}
+
+.list-three li{
+    text-align: left;  
+    margin: 20px;
+    
+}
+.list-three i{
+    margin-right: 10px;
+    }
+
+.btn-techno{
+    text-align: center;
+}
+
+.btn-techno .btn{
+    margin: 10px;
+}
+
+.btn-techno a{
+    font-size: 18px;
+}
+
+
+/*-PAGE TECHNOLOGY
+================================================================--*/
+
+.form-custom{
+    text-align:;
+}
+
 /*--MEDIA SCREEN
 ================================================================--*/
 
@@ -459,6 +575,20 @@ iframe{
         padding-bottom: 0px !important;
     }
     
+     /*----SHOP----*/
+
+     .message-wait{
+        height: auto;
+        margin-top: 35%;
+    }
+
+     .text-wait h1{
+        font-size: 48px;
+    }
+
+    .text-wait h1::after{ 
+        width: 300px; 
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -487,6 +617,14 @@ iframe{
         margin-left: 15px;
     }
 
+    /*----SHOP----*/
+    .text-wait h1{
+        font-size: 72px;
+    }
+
+    .text-wait h1::after{ 
+        width: 400px; 
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -548,41 +686,4 @@ iframe{
         width: 500px;
     }
 
-}
-
-/*-PAGE ORDER
-================================================================--*/
-
-#construction{
-    background-color: #EFEBE5;
-    height: 100vh;
-}
-
-.image-wait{
-    background-image: url(/images/logo\ white.png);
-    background-position: center;
-    height:100%;
-    opacity: 0.1;
-}
-
-.text-wait h1{
-    font-family: 'roose_sallyregular', Arial, sans-serif;
-    position: absolute;
-    color: black;
-    top: 40%;
-    left: 15%;
-    font-size: 128px;
-}
-
-.text-wait h1::after{
-    background-image: url(../images/home/soulignage.svg);
-    background-repeat: no-repeat;
-    display: block;
-    height: 20px;
-    width: 600px;
-    content: " ";
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
 }
