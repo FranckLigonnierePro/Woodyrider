@@ -328,6 +328,7 @@ h5 span{
 
 /*--FOOTER
 ================================================================--*/
+
 footer{
     height: auto;
 }
@@ -389,6 +390,7 @@ iframe{
 
 /*--MEDIA SCREEN
 ================================================================--*/
+
 @media screen and (min-width: 360px) and (max-width: 575px) {
 
     /*---header--*/
@@ -546,4 +548,41 @@ iframe{
         width: 500px;
     }
 
+}
+
+/*-PAGE ORDER
+================================================================--*/
+
+#construction{
+    background-color: #EFEBE5;
+    height: 100vh;
+}
+
+.image-wait{
+    background-image: url(/images/logo\ white.png);
+    background-position: center;
+    height:100%;
+    opacity: 0.1;
+}
+
+.text-wait h1{
+    font-family: 'roose_sallyregular', Arial, sans-serif;
+    position: absolute;
+    color: black;
+    top: 40%;
+    left: 15%;
+    font-size: 128px;
+}
+
+.text-wait h1::after{
+    background-image: url(../images/home/soulignage.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 20px;
+    width: 600px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 }
