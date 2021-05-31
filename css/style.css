@@ -448,6 +448,12 @@ iframe {
 /*-PAGE TECHNOLOGY
 ================================================================--*/
 
+#story2{
+  padding: 20px;
+  height: auto;
+  background-color: #efebe5;
+}
+
 .etapebox {
   height: 110px;
 }
